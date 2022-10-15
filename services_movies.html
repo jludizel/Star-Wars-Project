@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f756a82c28.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jQuery Version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- CSS jQuery UI -->
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/vader/jquery-ui.css" />
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./resources/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Final Project</title>
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+
+    <div class="sticky-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./index.html"><img src="./media/star-wars-logo.png" alt="logo"
+                        style="height: 3rem;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./index.html"><span style="color: #dba90d;">Home</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./about_us.html"><span style="color: #dba90d;">About
+                                    Us</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-5 dropdown-toggle" href="./services.html"
+                                id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span style="color: #dba90d;">Services</span></a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./services_trainings.html">Trainings</a></li>
+                                <li><a class="dropdown-item" href="./services_movies.html">Movies</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./contact.html"><span
+                                    style="color: #dba90d;">Contact</span></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-brands fa-facebook-f fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-instagram fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+    <!--END NAVBAR-->
+
+    <div class="container-md mt-5">
+
+        <p class="text-center fs-5">Here you can find some of our movies</p>
+
+        <p class="text-center"><i class="fa-solid fa-arrow-down-long fs-1"></i></p>
+
+        <p class="text-center fs-1" id="item-1"><span style="color: #dba90d;">M O V I E S</span></p>
+
+    </div>
+
+    <div class="container-lg mt-5" style="display: none;" id="item-2">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tab1">Star Wars: Episode 1</a></li>
+                <li><a href="#tab2">Star Wars: Episode 2</a></li>
+                <li><a href="#tab3">Star Wars: Episode 3</a></li>
+                <li><a href="#tab4">Star Wars: Episode 4</a></li>
+                <li><a href="#tab5">Star Wars: Episode 5</a></li>
+                <li><a href="#tab6">Star Wars: Episode 6</a></li>
+                <li><a href="#tab7">Star Wars: Episode 7</a></li>
+                <li><a href="#tab8">Star Wars: Episode 8</a></li>
+                <li><a href="#tab9">Star Wars: Episode 9</a></li>
+            </ul>
+
+            <div id="tab1">
+                <h2 class="text-center">The Phantom Menace </h2>
+                <img src="./media/episode_1.jpg" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+
+            <div id="tab2">
+                <h2 class="text-center">Attack of the Clones</h2>
+                <img src="./media/episode_2.jpg" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+
+            <div id="tab3">
+                <h2 class="text-center">Revenge of the Sith</h2>
+                <img src="./media/episode_3.jpg" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+
+            <div id="tab4">
+                <h2 class="text-center">A New Hope</h2>
+                <img src="./media/episode_4.jpg" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+
+            <div id="tab5">
+                <h2 class="text-center">The Empire Strikes Back</h2>
+                <img src="./media/episode_5.jpg" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+
+            <div id="tab6">
+                <h2 class="text-center">Return of the Jedi</h2>
+                <img src="./media/episode_6.jpg" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+
+            <div id="tab7">
+                <h2 class="text-center">The Force Awakens</h2>
+                <img src="./media/episode_7.jfif" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+
+            <div id="tab8">
+                <h2 class="text-center">The Last Jedi</h2>
+                <img src="./media/episode_8.jpg" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+
+            <div id="tab9">
+                <h2 class="text-center">The Rise of Skywalker</h2>
+                <img src="./media/episode_9.jpg" class="img-fluid rounded mx-auto d-block" alt="Star Wars Universe Hero Banner">
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2022 jQuery Project - Jeimy Yax</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+
+    <!--END FOOTER-->
+
+    <!--jQuery-->
+
+    <script type="text/javascript">
+        $("#tabs").tabs();
+
+        $("#item-1").hover(function () {
+            $("#item-2").show();
+        });
+    </script>
+
+    <!--END jQuery-->
+
+</body>
+
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f756a82c28.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jQuery Version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- CSS jQuery UI -->
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.13.2/themes/vader/jquery-ui.css" />
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./resources/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Final Project</title>
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+
+    <div class="sticky-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./index.html"><img src="./media/star-wars-logo.png" alt="logo"
+                        style="height: 3rem;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./index.html"><span
+                                    style="color: #dba90d;">Home</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./about_us.html"><span
+                                    style="color: #dba90d;">About Us</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-5 dropdown-toggle" href="./services.html"
+                                id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span style="color: #dba90d;">Services</span></a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./services_trainings.html">Trainings</a></li>
+                                <li><a class="dropdown-item" href="./services_movies.html">Movies</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./contact.html"><span
+                                    style="color: #dba90d;">Contact</span></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-brands fa-facebook-f fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-instagram fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+    <!--END NAVBAR-->
+
+
+    <!--FIRST SECTION-->
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="img-fluid mx-auto mb-4 shadow-lg p-3 mb-5 bg-body rounded" src="./media/vader.jpg"
+                    alt="Vader" width="400" height="400">
+                <h1>Contact with The Empire</h1>
+                <p class="lead">Please fill out the form below to receive more information about The Empire.
+                </p>
+            </div>
+
+            <!--END FIRST SECTION-->
+
+            <!--FORM-->
+
+            <div class="col-md col-lg-12">
+                <form class="needs-validation" id="form_sw" validate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="phone" class="form-control" id="phone" placeholder="2222-2222" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid phone number.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-5">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Choose...</option>
+                                <option>Costa Rica</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">Province</label>
+                            <input type="text" class="form-control" id="state" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid province.
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Zip Code</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+
+                    <h4 class="mb-3">How Dark Are You?</h4>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="dark" name="darktMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="credit">Dark</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="mostlyDark" name="darktMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="debit">Mostly Dark</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="kindaDark" name="darktMethod" type="radio" class="form-check-input" required>
+                            <label class="form-check-label" for="paypal">Kinda Dark</label>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="col-12 text-center">
+                        <button class="btn btn-dark btn-lg" type="submit">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+
+            <!--END FORM-->
+        </main>
+    </div>
+    
+
+    <!--FOOTER-->
+
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2022 jQuery Project - Jeimy Yax</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+
+    <!--END FOOTER-->
+
+    <!--jQuery-->
+
+    <script type="text/javascript">
+        $('#firstName, #lastName').keyup(function () {
+            if ($("#firstName, #lastName").val().length > 0) {
+                // input is Not empty, enable button
+                $(this).addClass("not-empty");
+            } else {
+                // input is empty, disable button
+                $(this).removeClass("not-empty");
+            }
+        });
+
+        $("#email").blur(function () {
+            if (!$(this).val()) {
+                $(this).addClass("errortwo");
+            } else {
+                $(this).removeClass("errortwo");
+            }
+        });
+
+        $("#phone").blur(function () {
+            if (!$(this).val()) {
+                $(this).addClass("error");
+            } else {
+                $(this).removeClass("error");
+            }
+        });
+
+        $("#state").autocomplete({
+            source: ["San José", "Cartago", "Alajuela", "Heredia", "Guanacaste", "Limón", "Puntarenas"]
+        });
+
+        $("#form_sw").submit(function () {
+            swal("Thank You!", "Data sent successfully", "success");
+            event.preventDefault();
+        });
+    </script>
+
+    <!--END jQuery-->
+
+</body>
+
+</html>

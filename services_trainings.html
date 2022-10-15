@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/f756a82c28.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- jQuery Version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- CSS jQuery UI -->
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/vader/jquery-ui.css" />
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"
+        integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./resources/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Final Project</title>
+
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+
+    <div class="sticky-top">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="./index.html"><img src="./media/star-wars-logo.png" alt="logo"
+                        style="height: 3rem;"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDarkDropdown">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./index.html"><span style="color: #dba90d;">Home</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./about_us.html"><span style="color: #dba90d;">About
+                                    Us</span></a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fs-5 dropdown-toggle" href="./services.html"
+                                id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"><span style="color: #dba90d;">Services</span></a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="./services_trainings.html">Trainings</a></li>
+                                <li><a class="dropdown-item" href="./services_movies.html">Movies</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="./contact.html"><span
+                                    style="color: #dba90d;">Contact</span></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-brands fa-facebook-f fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-twitter fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-instagram fa-lg"
+                                style="color: #dba90d;"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+    </div>
+    <!--END NAVBAR-->
+
+    <div class="container-md mt-5">
+
+        <p class="text-center fs-5">Here you can find some of the padawan trainings</p>
+
+        <p class="text-center"><i class="fa-solid fa-arrow-down-long fs-1"></i></p>
+
+        <p class="text-center fs-1" id="item-1"><span style="color: #dba90d;">T R A I N I N G S</span></p>
+
+    </div>
+
+    <div class="container-lg mt-5" style="display: none;" id="item-2">
+        <img src="./media/training.webp" class="img-fluid rounded mx-auto d-block" alt="Padawan Training">
+        <div>
+            <figure class="text-center mt-5">
+                <blockquote class="blockquote">
+                  <p>It will be a hard life; one without reward, without remorse, without regret. A path will be placed before you. The choice is yours alone. Do what you think you cannot do. It will be a hard life, but you will find out who you are.</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    Qui-Gon Jinn, to Anakin Skywalker
+                </figcaption>
+              </figure>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2022 jQuery Project - Jeimy Yax</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">Privacy</a></li>
+            <li class="list-inline-item"><a href="#">Terms</a></li>
+            <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+    </footer>
+
+    <!--END FOOTER-->
+
+    <!--jQuery-->
+
+    <script type="text/javascript">
+
+        $("#item-1").hover(function () {
+            $("#item-2").show();
+        });
+    </script>
+
+    <!--END jQuery-->
+
+</body>
+
+</html>

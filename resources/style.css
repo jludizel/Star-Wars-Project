@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.not-empty {
+    outline: #dba90d solid 3px;
+}
+
+.error {
+    outline: red solid 3px;
+}
+
+.errortwo {
+    outline: red dotted 3px;
+}
