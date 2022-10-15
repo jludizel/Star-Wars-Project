@@ -1,2 +1,2 @@
-# star wars project
+# Star Wars Pproject
  Project using jQuery
